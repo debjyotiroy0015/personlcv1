@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppions", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #080808;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px 20px 60px;
+}
+.orange {
+  color: rgba(223, 145, 0, 0.938);
+}
+/* .menu {
+  display: flex;
+} */
+.menu-options {
+  display: flex;
+  gap: 20px;
+}
+div ul li {
+  list-style: none;
+}
+div ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+div ul li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: rgba(223, 145, 0, 0.938);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: all 0.5s ease-in;
+}
+div ul li a:hover::after {
+  width: 100%;
+}
+.intro {
+  padding: 80px 50px 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.short-details {
+  font-size: 60px;
+}
+.picture {
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  border-radius: 50%;
+  background-image: url("profile.jpeg");
+  background-size: cover;
+  border: 10px solid black;
+  transition: all 0.5s ease-in;
+}
+.picture:hover {
+  border: 10px solid rgba(223, 145, 0, 0.938);
+}
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 60px 20px 60px;
+}
+.about-pics {
+  height: 350px;
+  width: 270px;
+  background-image: url("skill.jpeg");
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.5s ease-in;
+}
+.about-text {
+  width: 70%;
+}
+.about-text-para {
+  margin-top: 20px;
+}
+.skill-exp-edu {
+  margin-top: 20px;
+  display: flex;
+}
+.skill-exp-edu-menu {
+  display: flex;
+  gap: 20px;
+}
+.skill-detail,
+.exp-detail,
+.edu-detail {
+  margin-top: 20px;
+  width: 60%;
+}
+.hide {
+  display: none;
+}
+ol li {
+  list-style: none;
+}
+.skill-sets-name,
+.exp-details-name,
+.org-type {
+  color: rgba(223, 145, 0, 0.938);
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+.skill-sets li,
+.exp-details-org-name,
+.institute-name {
+  margin-top: 5px;
+  font-size: 0.6rem;
+}
+.exp-details-position {
+  margin-top: 5px;
+  font-size: 0.7;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px 20px 60px;
+}
+.service-items {
+  padding: 40px 60px 20px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.service-item {
+  text-decoration: none;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #3b3939;
+  color: white;
+  gap: 20px;
+}
+.service-item:hover {
+  background-color: rgba(223, 145, 0, 0.938);
+}
+.service-item-icon {
+  font-size: 5rem;
+}
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 60px 20px 60px;
+}
+.contact-me-section {
+  display: flex;
+  padding: 40px 60px 20px 60px;
+  justify-content: space-around;
+  font-size: 30px;
+}
+.contact-me-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.socials {
+  display: flex;
+  gap: 20px;
+}
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-text {
+  margin-left: 20px;
+}
+input,
+textarea {
+  font-size: 25px;
+  border: 2px solid rgba(223, 145, 0, 0.938);
+}
+button {
+  width: 100px;
+  height: 35px;
+  color: white;
+  background-color: rgba(223, 145, 0, 0.938);
+}
